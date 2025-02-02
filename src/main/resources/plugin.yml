@@ -1,7 +1,7 @@
 name: AntiNetherRoof
 version: '1.0.1'
 main: geometrical.anr.AntiNetherRoof
-api-version: '1.12'
+api-version: '1.21'
 load: STARTUP
 authors: [ Geometrical ]
 description: If someone tries to get onto the roof it will teleport them down to the closest air block.

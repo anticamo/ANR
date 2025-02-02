@@ -26,12 +26,10 @@ public final class NetherRoofListener implements Listener {
                 Location safeLocation = findSafeLocationBelow(to);
 
                 if (safeLocation != null) {
-
                     if (!isSameBlock(from, safeLocation)) {
                         event.setTo(safeLocation);
                     }
                 } else {
-
                     Location fallbackLocation = getFallbackLocation(to);
                     if (!isSameBlock(from, fallbackLocation)) {
                         event.setTo(fallbackLocation);
@@ -49,10 +47,8 @@ public final class NetherRoofListener implements Listener {
         int x = startLocation.getBlockX();
         int z = startLocation.getBlockZ();
 
-        for (int y = startY - 3; y >= 0; y--) {
-
+        for (int y = startY - 3; y >= world.getMinHeight(); y--) {
             Location checkLocation = new Location(world, x + 0.5, y, z + 0.5);
-
             Location belowLocation = new Location(world, x + 0.5, y - 1, z + 0.5);
 
             if (checkLocation.getBlock().getType() == Material.AIR &&
@@ -84,7 +80,6 @@ public final class NetherRoofListener implements Listener {
 
     private boolean isSameBlock(Location loc1, Location loc2) {
         if (loc1 == null || loc2 == null) return false;
-
         return loc1.getBlockX() == loc2.getBlockX() &&
                 loc1.getBlockY() == loc2.getBlockY() &&
                 loc1.getBlockZ() == loc2.getBlockZ();
