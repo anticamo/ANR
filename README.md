@@ -6,7 +6,7 @@ Anti-Nether Roof (ANR) is a simple plugin that prevents players from accessing t
 
 ### Installation
 
-1. Download the latest version from the [versions tab](https://modrinth.com/plugin/anti-nether-roof/versions/).
+1. Download the latest version from the [versions tab](https://modrinth.com/plugin/anti-nether-roof/versions/) and **NOT** from the download button at the top.
 2. Place the file in your `/plugins` folder.
 3. Restart the server.
 
