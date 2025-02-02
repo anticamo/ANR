@@ -22,3 +22,6 @@ The bypass permission is granted by default to players with operator status (op)
 **Default**: op
 
 </details>
+
+## <center>Known Issues</center>
+[{player_name} moved too quickly! {coordinates}](https://github.com/anticamo/ANR/issues/1)
