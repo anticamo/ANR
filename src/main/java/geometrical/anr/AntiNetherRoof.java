@@ -8,7 +8,8 @@ public final class AntiNetherRoof extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        Bukkit.getPluginManager().registerEvents(new NetherRoofListener(), this);
+        saveDefaultConfig();
+        Bukkit.getPluginManager().registerEvents(new NetherRoofListener(this), this);
 
         int pluginId = 24530;
         Metrics metrics = new Metrics(this, pluginId);
