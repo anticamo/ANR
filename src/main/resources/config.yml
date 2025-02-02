@@ -1,0 +1,5 @@
+not-allowed-message: "You are not allowed on the Nether roof!"
+safe-location-message: "You have been moved to a safe location."
+
+show-not-allowed-message: true
+show-safe-location-message: true
