@@ -1,7 +1,7 @@
 name: AntiNetherRoof
 version: '1.0.1'
 main: geometrical.anr.AntiNetherRoof
-api-version: '1.21'
+api-version: '1.19'
 folia-supported: true
 load: STARTUP
 authors: [ Geometrical ]
